@@ -1,32 +1,77 @@
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .full-width {
-    width: 100%;
-  }
-  
-  .mat-card {
-    margin-top: 20px;
-    padding: 20px;
-  }
-  
-  .radio-button {
-    display: block;
-    margin: 5px 0;
-  }
-  
-  .mt-4 {
-    margin-top: 1.5rem;
-  }
-  
-  p {
-    font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.field{
+  margin: 20px 0;
+}
+
+.mat-card {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: xx-large;
+}
+
+.radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.radio-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.form-group{
+  label{
+    font-size: 20px;
     color: #333;
-    word-break: break-all;
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 5px;
   }
-  
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+  word-break: break-all;
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#btn_clear{
+  background-color: #333;  
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fileName {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75;
+}

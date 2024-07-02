@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <mat-card>
-    <mat-card-title>LeetCode Solution File Name Generator</mat-card-title>
+    <h1>LeetCode Solution File Name Generator</h1>
     <mat-card-content>
       <form (ngSubmit)="generateFileName()">
         <mat-form-field class="full-width">
@@ -15,23 +15,26 @@
         <div class="form-group">
           <label>Programming Language</label>
           <mat-radio-group [(ngModel)]="selectedLanguage" name="language" required>
-            <mat-radio-button *ngFor="let language of languages" [value]="language.code" class="radio-button">
-              {{ language.name }}
+            <mat-radio-button *ngFor="let language of languages" [value]="language.value" class="radio-button">
+              <img [src]="language.logo" alt="{{ language.name }} logo" class="logo"> {{ language.name }}
             </mat-radio-button>
           </mat-radio-group>
         </div>
 
-        <mat-form-field class="full-width">
+        <mat-form-field class="full-width field">
           <mat-label>Question Number and Title</mat-label>
           <input matInput [(ngModel)]="question" name="question" required placeholder="e.g., 1. Two Sum">
         </mat-form-field>
-
-        <button mat-raised-button color="primary" type="submit">Generate File Name</button>
+        
+        <div class="buttons">
+          <button mat-flat-button id="btn_clear" type="reset" (click)="clear()">Clear</button>
+          <button mat-flat-button color="primary" type="submit">Generate File Name</button>
+        </div>
       </form>
 
       <div *ngIf="fileName" class="mt-4">
         <h4>Generated File Name:</h4>
-        <p>{{ fileName }}</p>
+        <p class="fileName">{{ fileName }}</p>
       </div>
     </mat-card-content>
   </mat-card>
