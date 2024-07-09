@@ -2,6 +2,10 @@
 
 This Angular application generates a formatted file name for LeetCode solutions based on the selected programming language, difficulty, question number, and title. The application uses Angular Material for the UI components and includes logos for each programming language.
 
+## Purpose
+
+I have another repository to store all of my leetcode solutions: https://github.com/haydenpham/leetcode. This website will help me generate the file name faster.
+
 ## Features
 
 - Select difficulty level: Easy, Medium, Hard
