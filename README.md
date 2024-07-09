@@ -1,27 +1,39 @@
-# LeetCodeSolutionFileNameGenerator
+# LeetCode Solution File Name Generator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+This Angular application generates a formatted file name for LeetCode solutions based on the selected programming language, difficulty, question number, and title. The application uses Angular Material for the UI components and includes logos for each programming language.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Select difficulty level: Easy, Medium, Hard
+- Choose programming language: C#, Java, Python, SQL, Bash Script
+- Input question number and title
+- Generate a formatted file name
+- Clear form fields
 
-## Code scaffolding
+## Running site
+The website could be accessed at https://haydenpham.github.io/LeetCodeSolutionFileNameGenerator/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+1. Clone the repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/haydenpham/LeetCodeSolutionFileNameGenerator.git
+cd LeetCodeSolutionFileNameGenerator
+```
+2. Install Dependencies:
+```bash
+npm install
+```
+3. Run the application:
+```bash
+ng serve
+```
+4. Open your browser and navigate to http://localhost:4200
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Usage
+1. Select the difficulty level from the dropdown.
+2. Choose a programming language by clicking on the corresponding radio button.
+3. Enter the question number and title in the input fields.
+4. Click the "Generate File Name" button to generate the formatted file name.
+5. Click the "Clear" button to reset the form fields.
